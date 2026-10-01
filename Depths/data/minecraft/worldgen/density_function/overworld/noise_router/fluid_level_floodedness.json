@@ -6,7 +6,7 @@
     0,
     2.25
   ],
-  "firstOctave": -9
+  "firstOctave": -9,
   "type": "minecraft:cache_once",
   "argument": {
     "type": "minecraft:range_choice",
