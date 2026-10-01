@@ -7,7 +7,7 @@
       "type": "minecraft:height_range",
       "height": {
         "type": "minecraft:trapezoid",
-        "min_inclusive": { "absolute": -2400 },
+        "min_inclusive": { "absolute": -2032 },
         "max_inclusive": { "absolute": -64 },
         "plateau": 50
       }
