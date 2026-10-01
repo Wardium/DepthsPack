@@ -29,7 +29,7 @@
     "erosion": "minecraft:overworld/erosion",
 "final_density": {
       "type": "minecraft:add",
-      "argument2": "minecraft:overworld/caves/abyss_cavity",
+      "argument2": "minecraft:caves/abyss_cavity",
       "argument1": {
         "type": "minecraft:min",
         "argument1": {
