@@ -1,19 +1,18 @@
-tag @s add abyss_scaled
+tag @s add abyss_checked
 tag @s add abyssal_elite
 
-# Triple Sight Distance (Vanilla follow range is ~16 to 32 -> boost to 96)
+# Abyss Stats: 3x Sight Range, 2x Movement Speed, 3x Base Damage
 attribute @s minecraft:generic.follow_range base set 96.0
-
-# 2x Movement Speed (Doubled base movement)
 attribute @s minecraft:generic.movement_speed base multiply 1.0
-
-# 3x Base Damage output + high static hit floor
 attribute @s minecraft:generic.attack_damage base multiply 2.0
-attribute @s minecraft:generic.attack_damage base set 35.0
+attribute @s minecraft:generic.attack_damage base set 30.0
 
-# Creeper explosion power escalation
+# Super Creeper
 execute if entity @s[type=minecraft:creeper] run data merge entity @s {ExplosionRadius:8b,Fuse:15s}
 
-# Give custom equipment to guarantee lethality against late-game armor
-execute if entity @s[type=minecraft:stray] run item replace entity @s weapon.mainhand with bow[enchantments={"minecraft:power":5,"minecraft:punch":2}]
-execute if entity @s[type=minecraft:husk] run item replace entity @s weapon.mainhand with netherite_axe[enchantments={"minecraft:sharpness":5}]
+# Below -2400: Convert 50% of Zombies into Husks, and 50% of Skeletons into Strays
+execute if entity @s[type=minecraft:zombie] if predicate abyssal:chance_50 run summon minecraft:husk ~ ~ ~ {Tags:["abyss_checked","abyssal_elite"],HandItems:[{id:"minecraft:netherite_axe",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:sharpness":5}}}}]}
+execute if entity @s[type=minecraft:zombie] if predicate abyssal:chance_50 run tp @s ~ -5000 ~
+
+execute if entity @s[type=minecraft:skeleton] if predicate abyssal:chance_50 run summon minecraft:stray ~ ~ ~ {Tags:["abyss_checked","abyssal_elite"],HandItems:[{id:"minecraft:bow",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:power":5,"minecraft:punch":2}}}}]}
+execute if entity @s[type=minecraft:skeleton] if predicate abyssal:chance_50 run tp @s ~ -5000 ~
