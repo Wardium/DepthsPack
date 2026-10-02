@@ -7392,11 +7392,11 @@
                 "if_true": {
                     "type": "minecraft:vertical_gradient",
                     "false_at_and_above": {
-                        "absolute": -1000
+                        "absolute": -950
                     },
                     "random_name": "minecraft:deepslate",
                     "true_at_and_below": {
-                        "absolute": -1008
+                        "absolute": -1020
                     }
                 },
                 "then_run": {
