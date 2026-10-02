@@ -2,7 +2,6 @@
   "type": "minecraft:min",
   "argument1": {
     "type": "minecraft:add",
-    "argument2": "minecraft:caves/abyss_cavity",
     "argument1": {
       "type": "minecraft:min",
       "argument1": {
@@ -64,7 +63,7 @@
                               },
                               "argument2": {
                                 "type": "minecraft:mul",
-                                "argument1": 5,
+                                "argument1": 5.0,
                                 "argument2": {
                                   "type": "minecraft:min",
                                   "argument1": "minecraft:overworld/caves/entrances",
@@ -145,7 +144,8 @@
         }
       },
       "argument2": "minecraft:overworld/caves/noodle"
-    }
+    },
+    "argument2": "minecraft:caves/abyss_cavity"
   },
   "argument2": {
     "type": "minecraft:add",
