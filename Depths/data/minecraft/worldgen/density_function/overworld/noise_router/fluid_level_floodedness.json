@@ -1,14 +1,6 @@
 {
-  "amplitudes": [
-    0.5,
-    1.85,
-    1.0,
-    0,
-    2.25
-  ],
-  "firstOctave": -9,
-  "type": "minecraft:cache_once",
-  "argument": {
+  "type": "minecraft:min",
+  "argument1": {
     "type": "minecraft:range_choice",
     "input": "terralith:overworld/cliff/spline",
     "min_inclusive": -1000000,
@@ -20,5 +12,12 @@
       "xz_scale": 1,
       "y_scale": 1.4
     }
+  },
+  "argument2": {
+    "type": "minecraft:y_clamped_gradient",
+    "from_y": -64,
+    "to_y": -200,
+    "from_value": 1.0,
+    "to_value": -1.0
   }
 }
