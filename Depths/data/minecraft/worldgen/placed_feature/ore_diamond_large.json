@@ -1,12 +1,27 @@
 {
-  "type": "minecraft:height_range",
-  "height": {
-    "type": "minecraft:trapezoid",
-    "max_inclusive": {
-      "absolute": -1000
+  "feature": "minecraft:ore_diamond_large",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 9
     },
-    "min_inclusive": {
-      "absolute": -2032
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:trapezoid",
+        "max_inclusive": {
+          "absolute": -1000
+        },
+        "min_inclusive": {
+          "absolute": -2200
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
     }
-  }
+  ]
 }
