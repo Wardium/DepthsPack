@@ -1,0 +1,16 @@
+{
+  "feature": "lavafix:air_ore",
+  "placement": [
+    { "type": "minecraft:count", "count": 256 },
+    { "type": "minecraft:in_square" },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "max_inclusive": { "absolute": -55 },
+        "min_inclusive": { "absolute": -4096 }
+      }
+    },
+    { "type": "minecraft:biome" }
+  ]
+}
