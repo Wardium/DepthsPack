@@ -3,11 +3,11 @@
   "config": {
       "radius": {
           "type": "minecraft:uniform",
-          "min_inclusive": 24,
-          "max_inclusive": 32
+          "min_inclusive": 10,
+          "max_inclusive": 12
       },
       "state": {
-          "Name": "minecraft:air"
+          "Name": "minecraft:deepslate"
       },
       "target": {
           "Name": "minecraft:lava",
