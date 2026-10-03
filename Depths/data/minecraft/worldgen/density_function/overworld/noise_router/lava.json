@@ -1,6 +1,7 @@
 {
-  "type": "minecraft:noise",
+  "type": "minecraft:constant",
   "noise": "minecraft:aquifer_lava",
   "xz_scale": 1,
-  "y_scale": 1
+  "y_scale": 0,
+  "argument": -1.0
 }
